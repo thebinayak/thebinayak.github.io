@@ -13,7 +13,7 @@
     border-radius: 50%; /* Makes the image round */
     margin-bottom: 20px;
   }
-    .about-research-field img {
+   .about-research-field img {
     max-width: 100%; /* Adjust the size as needed */
     height: auto;
     margin-bottom: 20px;
@@ -22,6 +22,44 @@
   .about-section p {
     color: #333;
   }
+/* Google Scholar, ORCID, Scopus */
+.profile-links {
+    text-align: left;
+}
+
+.profile-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-links li {
+    margin-bottom: 10px;
+}
+
+.profile-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 20px;
+	position: relative;
+    padding: 0 10px; /* Space around the pipe */
+}
+
+
+.profile-links a::before {
+    content: '|';
+    position: absolute;
+    left: 0;
+    color: #000; /* Adjust color as needed */
+}
+
+.profile-links a:first-child::before {
+    content: '';
+}
+
+.profile-links a:hover {
+    text-decoration: underline;
+}
+
 
   /* Additional CSS for Projects Section */
 .projects-section h2 {
@@ -168,4 +206,14 @@ html {
 .highlighted {
   font-weight: bold; /* Makes text bold */
   /*background-color: yellow; /* Sets background color to yellow */
+}
+
+/* For Research Area image caption */
+.container figure {
+    text-align: center;
+}
+.container figcaption {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #666;
 }
