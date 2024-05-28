@@ -216,4 +216,7 @@ html {
     margin-top: 10px;
     font-size: 20px;
     color: #666;
+	font-weight: bold;  /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+    text-align: center; /* Centers the text */
 }
